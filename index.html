@@ -133,26 +133,27 @@ https://mybestguide.com/health-and-care/skin-allergy/
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>  <!--header displayed on page 3-->
 	</div>
+	<div id="content" class="w3-container"> <!--moved div back up so it wouldnt interfere with look of question-->
 	 <!-- moved question to appear above buttons --> 
 	<p>Do you get this rash when you go outside sometimes?</p>     <!--question asked on page 3-->
 	<a href="#four" onclick="poisonivyAdd();"class="w3-btn w3-grey w3-round"> Yes </a>  <!--one will be added to poisonivy if user responds yes on question 3-->
 	<a href="#four" onclick="ringwormAdd();"class="w3-btn w3-grey w3-round"> No </a>  <!--one will be added to ringworm if user responds no on question 3-->
-    	<div id="content" class="w3-container">
 
 		 <!-- added question into content section and added corresponfing allergy/cold responses --> 
     	</div>
 </div>
-	<div class="page" id="four">  <!--this page includes content that askes user the 4th question to determine the probability of their rash being poisonivy or ringworm, once user clicks "yes" or "no", they will be redirected to page 5-->
+
+<div class="page" id="four">  <!--this page includes content that askes user the 4th question to determine the probability of their rash being poisonivy or ringworm, once user clicks "yes" or "no", they will be redirected to page 5-->
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>  <!--header on page four-->
 	</div>
+	<div id="content" class="w3-container"> <!--moved div back up so it wouldnt interfere with look of question-->
         <!-- moved question to appear above buttons --> 
 	<p>Do you have intense itching and burning sensation on the rash?</p>  <!--last question-->
 	<a href="#five" onclick="poisonivyAdd();"class="w3-btn w3-grey w3-round"> Yes </a>  <!--if user responfd yes, one will be added to poisonivy-->
 	<a href="#five" onclick="ringwormAdd();"class="w3-btn w3-grey w3-round"> No </a>  <!--if user responds no, one will be added to ringworm-->
-    	<div id="content" class="w3-container">
            
-		 <!-- changed question number and page ID; added question into content section and added corresponing contact dermatitis/scabies responses --> 
+		 <!-- changed question number and page ID; added question into content section and added corresponing ringworm/poisonivy responses --> 
 		</div>
 </div>
 		</div>
@@ -164,7 +165,7 @@ https://mybestguide.com/health-and-care/skin-allergy/
 	<div id="content" class="w3-container">	
 		<p id="results"></p>
     	</div>
-		<button onclick="getResults()">Results</button>  <!--button that once pressed will display probability that symptoms are either contact dermatitis or scabies from previously answered questions-->
+		<button onclick="getResults()">Results</button>  <!--button that once pressed will display probability that symptoms are either ringworm or poisonivy from previously answered questions-->
 		
 	</div>
 
