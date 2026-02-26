@@ -28,7 +28,7 @@ https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 https://mybestguide.com/health-and-care/skin-allergy/
 -->
-	
+<!-- changed the original questions from app 4 skeleton to my questions between ringworm and poison ivy, also deleted the alert from line 47-->
  <head> 
       <title>Hello World</title>  
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,24 +39,23 @@ https://mybestguide.com/health-and-care/skin-allergy/
 
 
 <script>
-        var contactdermatitis_count = 0; //contactdermatitis count to begin at 0
-        var scabies_count = 0; //scabies count to begin at 0
+        var ringworm_count = 0; //ringworm count to begin at 0 <!-- changed to ringworm-->
+        var poisonivy_count = 0; //poisonivy count to begin at 0 <!--changed to poison ivy-->
 
-        function contactdermatitisAdd(){
-            contactdermatitis_count = contactdermatitis_count + 1; //if question relates to contact dermatitis, add 1
-		alert(contactdermatitis_count); //alerts that question relates to contact dermatitis 
+        function ringwormAdd(){
+            ringworm_count = ringworm_count + 1; //if question relates to ringworm, add 1 <!-- changed to ringworm and deleted alert from line 47-->
 
         }
 	
-	 function scabiesAdd(){
-            scabies_count = scabies_count + 1; //if question relates to scabies, add 1
+	 function poisonivyAdd(){
+            poisonivy_count = poisonivy_count + 1; //if question relates to poisonivy, add 1 <!--changed to poison ivy-->
         
         }
 	
 	function getResults(){
-		var contactdermatitisPercent = (contactdermatitis_count / 4) * 100; //equation to calculate the contact dermatitis percent by questions that answered "Yes" to contact dermatitis
-		var scabiesPercent = (scabies_count / 4) * 100; //equation to calculate the scabies percent by questions that answered "Yes" to scabies
-		document.getElementById("results").innerHTML = "Probability it is contact dermatitis =" + contactdermatitisPercent + "<br> Probability it is scabies = " + scabiesPercent; 	//function to calculate the percent possibility that it is either contact dermatitis or scabies
+		var ringwormPercent = (ringworm_count / 4) * 100; //equation to calculate the ringworm percent by questions that answered "Yes" to ringworm <!-- changed to ringworm-->
+		var poisonivyPercent = (poisonivy_count / 4) * 100; //equation to calculate the poisonivy percent by questions that answered "Yes" to poisonivy <!--changed to poison ivy-->
+		document.getElementById("results").innerHTML = "Probability it is ringworm =" + ringwormPercent + "<br> Probability it is poisonivy = " + poisonivyPercent; 	//function to calculate the percent possibility that it is either ringworm or poisonivy
 
 	}
 
